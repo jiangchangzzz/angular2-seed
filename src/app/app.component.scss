@@ -1,0 +1,7 @@
+@mixin mini{
+    color: lightblue
+}
+
+div{
+    @include mini;
+}
