@@ -7,6 +7,7 @@ var helpers = require('./helpers');
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 
 module.exports = webpackMerge(commonConfig, {
+  //在单独文件中产生sourcemaps，减慢构建速度
   devtool: 'source-map',
 
   output: {
