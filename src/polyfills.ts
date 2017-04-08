@@ -2,9 +2,9 @@ import 'core-js/es6';
 import 'core-js/es7/reflect';
 require('zone.js/dist/zone');
 if (process.env.ENV === 'production') {
-  // Production
+  // 生产环境
 } else {
-  // Development and test
+  // 开发和测试环境
   Error['stackTraceLimit'] = Infinity;
   require('zone.js/dist/long-stack-trace-zone');
 }

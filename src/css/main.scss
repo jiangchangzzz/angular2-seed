@@ -1,4 +1,42 @@
-body{
+body,h1,h2,h3,h4,h5,h6,div,ul,ol,li,header,main,footer,img,input{
     margin: 0;
     padding: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+ul,ol{
+    list-style: none;
+}
+
+.clearfix:after,
+.clearfix:before{
+    display: table;
+    content: ' ';
+    clear: both;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+.title{
+    font-weight: bold;
+    padding: 20px;
 }
