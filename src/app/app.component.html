@@ -1,2 +1,16 @@
-<div>hello world</div>
-<img src="../assets/banner.png">
+<header class="header">
+    <h1>hello world</h1>
+    <nav>
+        <ul>
+            <li [routerLink]="['/home']">Home</li>
+            <li [routerLink]="['/about']">About</li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <router-outlet></router-outlet>
+    <img src="../assets/banner.png">
+</main>
+<footer class="footer">
+    Copyright
+</footer>

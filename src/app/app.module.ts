@@ -3,17 +3,24 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-//import { AppRoutingModule } from './app.routing'; //TODO: Create app.routing
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
     imports: [
         BrowserModule,
         HttpModule,
-    
-        //AppRoutingModule,
+        AppRoutingModule
     ],
-    declarations: [AppComponent],
-    providers: [/* TODO: Providers go here */],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        AboutComponent
+    ],
+    providers: [],
     bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule { 
+    
+}
